@@ -33,11 +33,7 @@ steps:
 
 - task: AzureFunctionApp@1
   inputs:
-    azureSubscription: '$(SUB)'
-    appType: functionAppLinux
+    azureSubscription: 'Visual Studio Enterprise Subscription – MPN - MD(1)(e4e41e7c-c6e5-4485-8360-45548d1411e2)'
+    appType: 'functionAppLinux'
     appName: 'CostAnalyticsApp'
-    #Uncomment the next lines to deploy to a deployment slot
-    #Note that deployment slots is not supported for Linux Dynamic SKU
-    #deployToSlotOrASE: true
-    #resourceGroupName: '<Resource Group Name>'
-    #slotName: '<Slot name>'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
