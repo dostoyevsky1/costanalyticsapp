@@ -35,5 +35,5 @@ steps:
   inputs:
     azureSubscription: 'Visual Studio Enterprise Subscription – MPN - MD(1)(e4e41e7c-c6e5-4485-8360-45548d1411e2)'
     appType: 'functionAppLinux'
-    appName: 'CostAnalyticsApp'
+    appName: 'MDATCostAnalyticsAppFunc'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
